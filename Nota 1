@@ -1,0 +1,33 @@
+//asignacion/*
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+	
+	int a = 5;
+	int b = 6;
+	float c = 4.6;
+	float d = 9.2;
+
+	printf("La suma de 5+6 es %d\n", a+b);
+	printf("La resta de 5+6 es %d\n", a-b);
+	printf("La multiplicacion de 4.6 x 9.2 es %f\n", c*d);
+	printf("La division de 9.2/4.6 es %f\n", d/c);
+	
+	printf("\a");
+	
+	return 0;
+}*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+	
+	int a = 5;
+	int b = 6;
+	printf("Potencia es igual a %f\n", pow(a,b));
+	printf("Modulo es igual a %d\n", a%b);
+	
+	return 0;
+}
