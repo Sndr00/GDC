@@ -1,0 +1,28 @@
+//Arbolito que cambia tamaño ^^
+
+#include <stdio.h>
+#include <iostream>
+#include <cstdlib>
+
+int main (){
+	setlocale(LC_ALL, "");
+	int opc;
+	
+printf("1. Arbol con 3 niveles");
+printf("\n2. Arbol con 5 niveles");
+printf("\n3. Arbol con 7 niveles\n");
+printf("\nOpción = ");
+scanf("%f",&opc);
+
+/*
+	if
+	printf("");
+	
+		else
+		printf("");
+
+			else
+			printf("");
+		*/		
+	return 0;
+}
