@@ -1,28 +1,29 @@
-//Arbolito que cambia tamaño ^^
-
 #include <stdio.h>
 #include <iostream>
-#include <cstdlib>
+#include <iostream>
 
-int main (){
-	setlocale(LC_ALL, "");
-	int opc;
-	
-printf("1. Arbol con 3 niveles");
-printf("\n2. Arbol con 5 niveles");
-printf("\n3. Arbol con 7 niveles\n");
-printf("\nOpción = ");
-scanf("%f",&opc);
+int main (){ 
+    int a=1;
+    while (a==1){ 
+int opc,d; 
 
-/*
-	if
-	printf("");
-	
-		else
-		printf("");
+printf("¿Cuantos niveles quiere que su arbol tenga? ");
+scanf("%d\n", &opc);
 
-			else
-			printf("");
-		*/		
-	return 0;
+if (opc>=1)
+{printf ("/", opc*d);
+printf ("L\n", opc*d);
+}
+
+else
+if (opc<=-1)
+{printf("ds\n");}
+
+else
+{printf("error\n");}
+
+printf("\n");
+
+}
+return 0;
 }
