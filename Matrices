@@ -1,0 +1,119 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/*
+int main (){ 
+int n,i,j,suma;
+srand (time(NULL));
+printf("Ingrese la longitud de la matriz: ");
+scanf("%d", &n);
+
+int A[n][n];
+printf("\nMatriz A:\n");
+for (i=0; i<n; i++){
+	for (j=0; j<n; j++){
+		A[i][j]=rand() % 10 ;
+		printf("%d ",A[i][j]);
+		if (i==j)
+		suma+=A[i][j];
+	}
+	printf("\n");
+}
+printf("La suma de la diagonal principal es: %d", suma);
+
+return 0;
+}
+
+
+//Matriz identidad
+
+int main (){
+int n,i,j,suma;
+srand (time(NULL));
+printf("Ingrese la longitud de la matriz: ");
+scanf("%d", &n);
+
+int A[n][n];
+printf("\nMatriz A:\n");
+for (i=0; i<n; i++){
+	for (j=0; j<n; j++){
+		if (i==j)
+		A[i][j]=1;
+	
+		else 
+		A[i][j]=0;	
+		printf("%d ",A[i][j]);
+		
+	suma+= i==j;
+	}
+	printf("\n");
+}	
+printf("La suma de la diagonal principal es: %d", suma);	
+	
+return 0;
+}*/
+
+
+//Matriz transpuesta
+
+int main (){ 
+int n,i,j,suma,sum=0;
+srand (time(NULL));
+printf("Ingrese la longitud de la matriz: ");
+scanf("%d", &n);
+
+int A[n][n];
+printf("\nMatriz \n");
+for (i=0; i<n; i++){
+	for (j=0; j<n; j++){
+		A[i][j]=rand() % 10 ;
+		printf("%d ",A[i][j]);
+		
+		if (i==j)
+		suma+=A[i][j];
+	}
+	printf("\n");
+}
+
+printf("La suma de la diagonal principal es: %d \n", suma);	
+
+printf("\nMatriz transpuesta \n");
+for (i=0; i<n; i++){
+	for (j=0; j<n; j++){
+		A[j][i] ;
+		printf("%d ",A[j][i]);
+		
+		if (j==i)
+		sum+=A[j][i];
+	}
+	printf("\n");
+}
+printf("La suma de la diagonal principal es: %d", sum);	
+
+return 0;
+}
+
+
+//Multiplicacion de matrices
+
+int main(){
+int n,i,j,k;
+srand (time(NULL));
+	printf("Ingrese la longitud de la matriz:\n");
+	scanf("%d", &n);
+int A[n][n], B[n][n], C[n][n];
+
+printf("Matriz A:\n");
+for (i=0;i<n;i++){
+	for (j=0;j<n;j++){
+		A[i][j]=rand () % 10;
+    printf(
+	}
+}
+
+printf
+	
+	
+return 0;
+}
