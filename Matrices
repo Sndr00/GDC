@@ -97,23 +97,45 @@ return 0;
 
 //Multiplicacion de matrices
 
+
 int main(){
 int n,i,j,k;
 srand (time(NULL));
-	printf("Ingrese la longitud de la matriz:\n");
+	printf("Ingrese la longitud de la matriz:");
 	scanf("%d", &n);
 int A[n][n], B[n][n], C[n][n];
 
-printf("Matriz A:\n");
+printf("\nMatriz A:\n");
 for (i=0;i<n;i++){
 	for (j=0;j<n;j++){
 		A[i][j]=rand () % 10;
-    printf(
+    printf("%d",A[i][j]);
 	}
+	printf("\n");
+	
 }
 
-printf
-	
+printf("\nMatriz B:\n");
+for (i=0;i<n;i++){
+    for (j=0;j<n;j++){
+        B[i][j]=rand()%10;
+        printf("%d",B[i][j]);
+    }
+		printf("\n");
+}
+printf("\nMatriz C:\n");	
+int temporal;
+for (i=0;i<n;i++){
+    for (j=0;j<n;j++){
+        temporal=0;
+        for (k=0;k<n;k++){
+            temporal += A[i][k] * B[i][j];
+        }
+        C[i][j]=temporal;
+        printf("%d", C[i][j]);
+    }
+    printf("\n");
+}
 	
 return 0;
 }
