@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+int i, j, n, num, temp=0, bandera=0;
+srand(time(NULL));
+
+num=rand();
+
+printf("Que tan largo quiere el arreglo: ");
+scanf("%d", &n);
+int lista [n];
+
+for (i=0;i<n;i++)
+lista [i]=rand ()%101;
+
+printf("Lista sin ordenar: \n");
+for (i=0;i<n;i++){
+	printf(" %d ",  rand()%101);
+	printf("\n");
+	}
+		
+for (i=1;i<n-1;i++){
+	bandera=0;
+		for (j=0;j<n-1;j++){
+			if (lista[j]<lista[i]){
+				bandera=1;
+				temp=lista[j];
+				lista[j]=lista[j+1];
+				lista[j+1]=temp;
+			}
+		}
+		if (bandera==0);
+		break;
+	}
+	printf("Lista ordenada: \n");
+	for (i=0;i<n;i++)
+	printf(" %d ", lista [i]);
+	
+	return 0;
+}	
+	
