@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <time.h>
+
+int main (){
+srand(time(NULL));
+int lg, i, j, n,num;
+num=rand();
+
+printf("Que tan largo quiere el arreglo");
+scanf("%d", &lg);
+	for (i=0;i<lg;i++){
+		printf("%d ", num);
+	}
+	
+void burbuja ();
+
+void burbuja (){
+	
+	for (i=0;i<n-1;i++){
+		for (j=i+1;j<n;j++){
+			if (n[i]<n[j]){
+				i=j;
+				j=n;
+				printf("%d", n);
+				return burbuja;
+			}
+		}
+	}
+}	
+	
+	return 0;
+}
