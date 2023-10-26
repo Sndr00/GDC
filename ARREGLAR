@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+srand (time(NULL));
+
+printf("Valores: \n");
+int lista [10];
+// Ver la posicon del valor mas bajo de -50 a 50
+
+return 0;
+}
