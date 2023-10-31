@@ -1,0 +1,153 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/*
+int main (){
+srand(time(NULL));
+int opc,i,min;
+
+printf("De que longitud desea el arreglo? ");
+scanf("%d",&opc);
+printf("\n");
+int lista [opc];
+
+printf("Lista\n");
+for(i=0;i<opc;i++)
+printf("%d ",rand()%100-50);
+
+printf("\n\nLa posicion del valor minimo es: ");
+printf("%d", min);
+
+return 0;
+}
+
+int find (int b[], int l){
+	int a, index;
+	
+	a=1000000;
+	index=-1;
+	
+	for (int i=0;i<l;i++)
+		if (b[i]<a)
+		{
+			a=b[i];
+			index=i;
+		}
+	return index;
+	}
+	
+int main(){
+	int l=50;
+	int b[l];
+	
+	srand(time(NULL));
+	
+	for (int i=0;i<l;i++){
+		b[i]=rand ()%100-50;
+		printf(" * %d ", b[i]);
+	}
+	
+	printf("\n \nValor minimo: \t%d ", b[find(b, l)]);
+	
+	return 0;
+}
+
+int find (int b[], int l){
+	int a, index;
+	
+	index=1000000;
+	a=-1;
+	
+	for (int i=0;i<l;i++)
+		if (b[i]>a)
+		{
+			a=b[i];
+			index=i;
+		}
+	return index;
+	}
+	
+int main(){
+	int l=50;
+	int b[l];
+	
+	srand(time(NULL));
+	
+	for (int i=0;i<l;i++){
+		b[i]=rand ()%100-50;
+		printf(" * %d ", b[i]);
+	}
+	
+	printf("\n\nValor maximo: \t%d ", b[find(b, l)]);
+	
+	return 0;
+}
+
+int find (int b[], int l){
+	int a, index;
+	
+	a=1000000;
+	index=-1;
+	
+	for (int i=0;i<l;i++)
+		if (b[i]<a)
+		{
+			a=b[i];
+			index=i;
+		}
+	return index;
+	}
+	
+int main(){
+	int l=50;
+	int b[l];
+	
+	printf("De que longitud desea el arreglo? ");
+	scanf("%d",&opc);
+	
+	srand(time(NULL));
+	
+	printf("Lista sin ordenar:\n");
+	for (int i=0;i<l;i++){
+		b[i]=rand ()%100-50;
+		printf("  %d ", b[i]);
+	}
+	printf("\n\nLista ordenada de menor a mayor:\n");
+	for (int i=0;i<l;i++)
+	printf("  %d  ", b[i]);
+	ARREGLAR
+	return 0;
+}*/
+int main (){
+	int i,j,n,temp=0,posicion=0;
+	srand(time(NULL));
+	printf("Numero de elementos a ordenar: ");
+	scanf("%d", &n);
+	int lista[n];
+	
+	printf("Lista sin ordenar\n");
+	for(i=0;i<n;i++)
+	{
+		lista[i]=rand()%101;
+		printf(" %d ", lista [i]);
+	}
+	printf("\n");
+	
+	for (i=0;i<n;i++){
+		posicion = i;
+		for (j=i+1;j<n;j++){
+			if (lista[posicion]>lista[j])
+			posicion = j;
+		}
+		if (posicion !=1){
+		temp = lista[i];
+		lista[i]=lista [posicion];
+		lista[posicion]=temp;
+	}
+}
+printf("Lista ordenada\n");
+for (i=0;i<n;i++)
+printf(" %d ",lista[i]);
+
+return 0;
+}
